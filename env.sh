@@ -68,5 +68,5 @@ docker run -d \
     -e SONAR_AUTH_TOKEN="$SONAR_AUTH_TOKEN" \
     -e SONAR_HOST_URL="$SONAR_HOST_URL" \
     -v /home/poison/jenkins_compose/jenkins_configuration:/var \
-
+    -v /var/run/docker.sock:/var/run/docker.sock
     sast:test1
